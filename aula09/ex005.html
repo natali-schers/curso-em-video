@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Exercício 5</title>
+
+    <style>
+        body {
+            background-color: beige;
+            color: black;
+            font: normal 15pt Arial;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaSript.</p>
+    <div id="msg">Clique em mim!</div>
+
+    <script>
+        // window.document.write(window.document.charset);
+        // window.document.write(window.navigator.appName);
+        // window.document.write(window.document.URL);
+        
+        var p1 = window.document.getElementsByTagName('p')[0];
+        // window.document.write(p1.innerText);
+        p1.style.color = 'white';
+
+        var corpo = window.document.body;
+        corpo.style.background = 'pink';
+
+        var msg = window.document.getElementById('msg').innerText = "Estou aguardando...";
+        // var msg = window.document.getElementById('msg');
+        // msg.style.background = 'salmon';
+        // msg.innerText = 'Estou aguardando...';
+
+        var div = window.document.querySelector('div#msg');
+        div.style.background = 'white';
+    </script>
+</body>
+</html>
